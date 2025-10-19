@@ -40,7 +40,7 @@ app/
 # 安装Python依赖
 pip install -r requirements.txt
 
-# 创建MySQL数据库
+# 创建MySQL数据库(配置数据库连接后直接启动服务，可自动创建数据库/表)
 mysql -u root -p
 CREATE DATABASE jwt_auth_db;
 ```
@@ -158,7 +158,7 @@ flask run --host=0.0.0.0 --port=8080
 - **令牌存储**: Redis缓存，支持分布式部署
 
 ### 安全特性
-- 密码使用bcrypt加密存储
+- 密码使用Bcrypt加密存储
 - JWT令牌包含用户ID和过期时间
 - 支持令牌黑名单机制
 - 自动刷新令牌，减少重复登录

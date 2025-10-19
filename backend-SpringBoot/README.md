@@ -133,9 +133,9 @@ src/main/java/com/jwt/
 | 功能 | Flask版本 | Spring Boot版本 |
 |------|-----------|-----------------|
 | JWT认证 | Flask-JWT-Extended | Spring Security + JJWT |
-| 数据库 | Flask-SQLAlchemy | Spring Data JPA |
+| 数据库 | Flask-SQLAlchemy | MyBatis-Plus |
 | 缓存 | Redis Python客户端 | Spring Data Redis |
-| 密码加密 | Werkzeug | BCrypt |
+| 密码加密 | Flask-Bcrypt | BCrypt |
 | 输入验证 | 手动验证 | Spring Validation |
 
 ## 测试
