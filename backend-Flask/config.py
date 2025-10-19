@@ -18,7 +18,7 @@ class Config:
     REDIS_URL = 'redis://:123456@localhost:6379/0' 
     
     # JWT配置
-    JWT_SECRET_KEY =  'jwt-secret-key'  # 密钥
+    JWT_SECRET_KEY =  'my_JWT_Demo-super-secret-jwt-key-at-least-32-characters-long-for-hs256'  # 密钥
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(seconds=20)  # 访问令牌过期时间（20秒）
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=7)  # 刷新令牌过期时间（7天）
     

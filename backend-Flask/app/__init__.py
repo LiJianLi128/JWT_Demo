@@ -4,7 +4,9 @@ from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 import redis
 from config import config
+from flask_bcrypt import Bcrypt # 密码加密（与spring-boot后端保持一致）
 
+bcrypt = Bcrypt()
 db = SQLAlchemy()
 jwt = JWTManager()
 redis_client = None
@@ -24,6 +26,7 @@ def create_app(config_name='default'):
     # 初始化扩展
     db.init_app(app)
     jwt.init_app(app)
+    bcrypt.init_app(app)
     
     # 初始化Redis
     global redis_client

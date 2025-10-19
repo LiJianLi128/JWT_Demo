@@ -15,12 +15,12 @@
 ## 技术架构
 
 ### 核心组件
-- **Web框架**: Flask 2.3.3
-- **ORM**: Flask-SQLAlchemy 3.0.5
-- **认证**: Flask-JWT-Extended 4.5.3
-- **缓存**: Redis 5.0.1
-- **数据库驱动**: PyMySQL 1.1.0
-- **密码加密**: bcrypt 4.0.1
+- **Web框架**: Flask 
+- **ORM**: Flask-SQLAlchemy 
+- **认证**: Flask-JWT-Extended 
+- **缓存**: Redis 
+- **数据库驱动**: PyMySQL 
+- **密码加密**: bcrypt (flask-bcrypt 1.0.1)
 
 ### 项目结构
 ```
@@ -30,7 +30,6 @@ app/
 │   ├── __init__.py
 │   ├── models.py       # 用户模型
 │   ├── routes.py       # 认证路由
-│   └── utils.py        # 工具函数
 └── config.py           # 配置管理
 ```
 
