@@ -19,6 +19,7 @@
 jwt_sqlalchemy_rl_demo/
 ├── backend-Flask/         # ✅ Flask后端服务
 ├── backend-SpringBoot/    # ✅ SpringBoot后端服务
+├── backend-NodeJS/        # ✅ Node.js后端服务
 ├── frontend/              # ✅ Vue3前端应用
 └── README.md              # ✅ DEMO说明
 ```
@@ -45,6 +46,19 @@ cd backend-SpringBoot
 mvn spring-boot:run
 
 # 启动前端 (修改API配置指向SpringBoot，vite.config.js的代理地址)8081
+cd frontend
+npm install
+npm run dev
+```
+
+### 使用Node.js后端
+```bash
+# 启动Node.js后端
+cd backend-NodeJS
+npm install
+npm run dev
+
+# 启动前端 (修改API配置指向Node.js，vite.config.js的代理地址)8082
 cd frontend
 npm install
 npm run dev
